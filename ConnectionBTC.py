@@ -6,7 +6,7 @@ from bitcoinrpc.authproxy import AuthServiceProxy
 #credentials
 rpcuser = "phil"
 rpcpassword = "Homework"
-rpcport = "18443"
+rpcport = "38332"
 rpchost = "192.168.2.143"
 
 #connection string
