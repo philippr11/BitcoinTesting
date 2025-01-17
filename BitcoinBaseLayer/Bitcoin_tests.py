@@ -61,7 +61,7 @@ def get_tx_details(txid: str) -> dict:
 
 
 def main():
-    with open("../Output_Data/transactions5.csv", mode="w", newline="", encoding="utf-8") as csv_file:
+    with open("../Data/transactions5.csv", mode="w", newline="", encoding="utf-8") as csv_file:
         writer = csv.writer(csv_file)
 
 
