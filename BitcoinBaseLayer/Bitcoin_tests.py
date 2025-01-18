@@ -3,7 +3,7 @@ import csv
 import time
 
 API_BASE = "https://mempool.space/api"
-#Blöcke dich ich betrachten möchte
+#Blöcke dich ich betrachten möchte:
 BLOCK_HEIGHTS = [100000, 300000, 500000, 700000, 870000]
 
 
@@ -35,7 +35,6 @@ def get_all_block_txs(block_hash: str) -> list:
 
         resp = requests.get(url)
         if resp.status_code != 200:
-            # Abbruchbedingung.
             break
 
         txs_batch = resp.json()
