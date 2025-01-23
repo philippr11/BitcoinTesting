@@ -1,7 +1,7 @@
 import requests
 
 # Konfigurationsdaten
-API_ENDPOINT = "https://test-node.t.voltageapp.io/v1"
+API_ENDPOINT = "https://ba-test-node.m.voltageapp.io"
 MACAROON_PATH = "admin.macaroon"
 
 
@@ -15,7 +15,7 @@ def load_macaroon(macaroon_path):
 def get_node_info(api_endpoint, macaroon_hex):
     headers = {"Grpc-Metadata-macaroon": macaroon_hex}
     try:
-        response = requests.get(f"{api_endpoint}/getinfo", headers=headers)
+        response = requests.get(f"{api_endpoint}/v1/getinfo", headers=headers)
         response.raise_for_status()
         return response.json()
     except requests.exceptions.RequestException as e:
@@ -28,6 +28,7 @@ if __name__ == "__main__":
 
     # Node-Info abrufen
     node_info = get_node_info(API_ENDPOINT, macaroon_hex)
+
     if node_info:
         print("Erfolgreich verbunden! Node Info:")
         print(node_info)
