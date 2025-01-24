@@ -1,3 +1,5 @@
+import time
+
 import requests
 
 
@@ -59,6 +61,8 @@ class InvoiceGenerator:
         for i in range(count):
             invoice = self._get_bolt11_invoice(sats_amount)
             invoices.append(invoice)
+            #API umgehen von Fehler "too many requests"
+            time.sleep(10)
         return invoices
 
     def debug_test_invoice(self, sats_amount: int):

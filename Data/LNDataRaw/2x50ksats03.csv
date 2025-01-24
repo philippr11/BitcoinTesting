@@ -1,0 +1,3 @@
+Payment Hash,Amount (sats),Num Hops,Fee (sats),Local Start (unix),Local End (unix),Local Duration (s),Attempt Time (ns),Resolve Time (ns),LN Duration (s)
+IkY4ruqNkrGigSgDmNb+I73GQQdStK7OfY1ntcXiZzw=,50000,3,46,1737738037,1737738057,20.604,0,0,0.0
+SqkvgEUhYA/sSy/1CYOZz9SaAd2+83zuAuHkWN0PX4w=,50000,3,46,1737738067,1737738083,15.072,0,0,0.0
