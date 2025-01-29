@@ -83,7 +83,7 @@ def main():
 
                 txs = get_all_block_txs(block_hash)
 
-                time.sleep(0.2)
+                time.sleep(0.5)
 
                 for tx in txs:
                     txid = tx.get("txid")

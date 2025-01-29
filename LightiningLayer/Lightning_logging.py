@@ -5,8 +5,8 @@ from invoice_generator import InvoiceGenerator
 
 #Konfigurationsdaten
 LN_ADDRESS = "groomedshallot09@walletofsatoshi.com"
-SATS_PER_PAYMENT = 10000
-PAYMENT_COUNT = 10
+SATS_PER_PAYMENT = 5000
+PAYMENT_COUNT = 15
 DELAY_SECONDS = 10
 
 LND_REST_URL = "https://ba-test-node.m.voltageapp.io"
